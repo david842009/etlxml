@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: etlxml
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: etlxml
+  template:
+    metadata:
+      labels:
+        app: etlxml
+    spec:
+      containers:
+      - name: etlxml
+        image: etlxml:latest
+        ports:
+        - containerPort: 80
