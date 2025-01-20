@@ -9,7 +9,7 @@ def run():
     with beam.Pipeline() as pipeline:
         (
             pipeline
-            | 'Crear datos' >> beam.Create([1, 2, 3, 4, 5])
+            | 'Crear datos' >> beam.Create([1, 2, 3, 4, 6])
             | 'Transformar datos' >> beam.Map(transform_data)
             | 'Imprimir resultados' >> beam.Map(print)
         )
