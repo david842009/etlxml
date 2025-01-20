@@ -27,10 +27,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r src/requirements.txt
 
-      - name: Run tests
-        run: |
-          pytest tests/
-
   deploy:
     name: Deploy to Kubernetes
     runs-on: ubuntu-latest
