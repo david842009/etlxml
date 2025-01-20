@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+<listing>
+  <state>Jalisco</state>
+  <city>Zapopan</city>
+  <colony>Campestre Las Palomas</colony>
+  <street>De la Gloria 2486, Campestre las Palomas, Jal. C.P 45200</street>
+  <external_num>null</external_num>
+  <code>98631</code>
+  <type>Departamento</type>
+  <purpose>Venta</purpose>
+  <price>1365000</price>
+  <mail_contact>user-9863@mail.com</mail_contact>
+  <phone_contact>7462446</phone_contact>
+</listing>
+<listing>
+  <state>Aguascalientes</state>
+  <city>Aguascalientes</city>
+  <colony>Canteras de San Javier</colony>
+  <street>P. de Yahualica</street>
+  <external_num>235</external_num>
+  <code>94525</code>
+  <type>Casa</type>
+  <purpose>Venta</purpose>
+  <price>1628000</price>
+  <mail_contact>user-9452@mail.com</mail_contact>
+  <phone_contact>39163015</phone_contact>
+</listing>
+</data>

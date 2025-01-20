@@ -20,5 +20,8 @@ RUN pip install --no-cache-dir -r /app/requirements.txt
 # Copiar el código del pipeline
 COPY src /app/src
 
+# Copiar el archivo feed.xml
+COPY data_source/feed.xml /app/data_source/feed.xml
+
 # Comando predeterminado para ejecutar el pipeline
 ENTRYPOINT ["python", "/app/src/etl_pipeline.py"]

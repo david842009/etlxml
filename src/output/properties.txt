@@ -1,0 +1,3 @@
+ubicacion,type,purpose,price,code,mail_contact,phone_contact
+Jalisco-Zapopan-Campestre Las Palomas-De la Gloria 2486, Campestre las Palomas, Jal. C.P 45200,Departamento,Venta,1365000,98631,user-9863@mail.com,7462446
+Aguascalientes-Aguascalientes-Canteras de San Javier-P. de Yahualica,Casa,Venta,1628000,94525,user-9452@mail.com,39163015
