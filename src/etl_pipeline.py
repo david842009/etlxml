@@ -73,6 +73,18 @@ def format_users(element):
         mail_contact=element['mail_contact']
     )
 
+def clean_price(record):
+    try:
+        # Convertir el precio a float y verificar que esté en un rango válido
+        price = float(record['price'])
+        if price < 0 or price > 100_000_000:  # Ajusta el rango según tu caso
+            record['price'] = None  # Asigna un valor nulo si está fuera de rango
+        else:
+            record['price'] = price
+    except (ValueError, TypeError):
+        record['price'] = None  # Maneja errores de conversión
+    return record
+
 def run(input_path):
     pipeline_options = PipelineOptions()
     with beam.Pipeline(options=pipeline_options) as p:
