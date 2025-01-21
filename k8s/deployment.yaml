@@ -15,5 +15,24 @@ spec:
       containers:
       - name: etlxml
         image: etlxml:latest
+        imagePullPolicy: Never
         ports:
         - containerPort: 80
+        env:
+        - name: MYSQL_HOST
+          value: mysql
+        - name: MYSQL_PORT
+          value: "3306"
+        - name: MYSQL_DATABASE
+          value: etl_database
+        - name: MYSQL_USER
+          value: etl_user
+        - name: MYSQL_PASSWORD
+          value: etl_password
+        resources:
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
+          requests:
+            memory: "256Mi"
+            cpu: "250m"
